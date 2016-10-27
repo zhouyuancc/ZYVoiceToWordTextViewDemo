@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202984A81DC1C4AA00E05C42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 202984A71DC1C4AA00E05C42 /* main.m */; };
+		202984AB1DC1C4AA00E05C42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 202984AA1DC1C4AA00E05C42 /* AppDelegate.m */; };
+		202984AE1DC1C4AA00E05C42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202984AD1DC1C4AA00E05C42 /* ViewController.m */; };
+		202984B11DC1C4AA00E05C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202984AF1DC1C4AA00E05C42 /* Main.storyboard */; };
+		202984B31DC1C4AA00E05C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202984B21DC1C4AA00E05C42 /* Assets.xcassets */; };
+		202984B61DC1C4AA00E05C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202984B41DC1C4AA00E05C42 /* LaunchScreen.storyboard */; };
+		202984C11DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 202984C01DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.m */; };
+		202984CC1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 202984CB1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.m */; };
+		20BB96D21DC1EFF000BF7263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BB96D11DC1EFF000BF7263 /* Images.xcassets */; };
+		20FC537A1DC1C7140055D5B9 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53771DC1C7140055D5B9 /* iflyMSC.framework */; };
+		20FC537B1DC1C7140055D5B9 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53791DC1C7140055D5B9 /* ISRDataHelper.m */; };
+		20FC53811DC1C7820055D5B9 /* ZYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53801DC1C7820055D5B9 /* ZYTextView.m */; };
+		20FC53841DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */; };
+		20FC53871DC1CD470055D5B9 /* ZYToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53861DC1CD470055D5B9 /* ZYToolBarView.m */; };
+		20FC538A1DC1D8750055D5B9 /* ZYVoiceRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53891DC1D8750055D5B9 /* ZYVoiceRecognizerView.m */; };
+		20FC538D1DC1E14C0055D5B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC538C1DC1E14C0055D5B9 /* CoreGraphics.framework */; };
+		20FC538F1DC1E15A0055D5B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC538E1DC1E15A0055D5B9 /* UIKit.framework */; };
+		20FC53911DC1E1600055D5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53901DC1E1600055D5B9 /* Foundation.framework */; };
+		20FC53931DC1E1720055D5B9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53921DC1E1720055D5B9 /* CoreTelephony.framework */; };
+		20FC53951DC1E17A0055D5B9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53941DC1E17A0055D5B9 /* AVFoundation.framework */; };
+		20FC53971DC1E18C0055D5B9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53961DC1E18C0055D5B9 /* libz.tbd */; };
+		20FC53991DC1E6260055D5B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53981DC1E6260055D5B9 /* SystemConfiguration.framework */; };
+		20FC539B1DC1E6300055D5B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC539A1DC1E6300055D5B9 /* QuartzCore.framework */; };
+		20FC539D1DC1E7F20055D5B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC539C1DC1E7F20055D5B9 /* CoreLocation.framework */; };
+		20FC539F1DC1E8240055D5B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC539E1DC1E8240055D5B9 /* AudioToolbox.framework */; };
+		20FC53A11DC1E84A0055D5B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		202984BD1DC1C4AB00E05C42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2029849B1DC1C4AA00E05C42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 202984A21DC1C4AA00E05C42;
+			remoteInfo = ZYVoiceToWordTextViewDemo;
+		};
+		202984C81DC1C4AB00E05C42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2029849B1DC1C4AA00E05C42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 202984A21DC1C4AA00E05C42;
+			remoteInfo = ZYVoiceToWordTextViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		202984A31DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYVoiceToWordTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		202984A71DC1C4AA00E05C42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		202984A91DC1C4AA00E05C42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		202984AA1DC1C4AA00E05C42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		202984AC1DC1C4AA00E05C42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		202984AD1DC1C4AA00E05C42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		202984B01DC1C4AA00E05C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		202984B21DC1C4AA00E05C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		202984B51DC1C4AA00E05C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		202984B71DC1C4AA00E05C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202984BC1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYVoiceToWordTextViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		202984C01DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYVoiceToWordTextViewDemoTests.m; sourceTree = "<group>"; };
+		202984C21DC1C4AB00E05C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202984C71DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYVoiceToWordTextViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		202984CB1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYVoiceToWordTextViewDemoUITests.m; sourceTree = "<group>"; };
+		202984CD1DC1C4AB00E05C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BB96D11DC1EFF000BF7263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		20FC53771DC1C7140055D5B9 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		20FC53781DC1C7140055D5B9 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		20FC53791DC1C7140055D5B9 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		20FC537F1DC1C7820055D5B9 /* ZYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYTextView.h; path = ../ZYTextView.h; sourceTree = "<group>"; };
+		20FC53801DC1C7820055D5B9 /* ZYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYTextView.m; path = ../ZYTextView.m; sourceTree = "<group>"; };
+		20FC53821DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DismissKeyboard.h"; sourceTree = "<group>"; };
+		20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DismissKeyboard.m"; sourceTree = "<group>"; };
+		20FC53851DC1CD470055D5B9 /* ZYToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYToolBarView.h; path = ../ZYToolBarView.h; sourceTree = "<group>"; };
+		20FC53861DC1CD470055D5B9 /* ZYToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYToolBarView.m; path = ../ZYToolBarView.m; sourceTree = "<group>"; };
+		20FC53881DC1D8750055D5B9 /* ZYVoiceRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYVoiceRecognizerView.h; path = ../ZYVoiceRecognizerView.h; sourceTree = "<group>"; };
+		20FC53891DC1D8750055D5B9 /* ZYVoiceRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYVoiceRecognizerView.m; path = ../ZYVoiceRecognizerView.m; sourceTree = "<group>"; };
+		20FC538C1DC1E14C0055D5B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20FC538E1DC1E15A0055D5B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20FC53901DC1E1600055D5B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20FC53921DC1E1720055D5B9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		20FC53941DC1E17A0055D5B9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		20FC53961DC1E18C0055D5B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		20FC53981DC1E6260055D5B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		20FC539A1DC1E6300055D5B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		20FC539C1DC1E7F20055D5B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		20FC539E1DC1E8240055D5B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		202984A01DC1C4AA00E05C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FC53A11DC1E84A0055D5B9 /* AddressBook.framework in Frameworks */,
+				20FC539F1DC1E8240055D5B9 /* AudioToolbox.framework in Frameworks */,
+				20FC539D1DC1E7F20055D5B9 /* CoreLocation.framework in Frameworks */,
+				20FC539B1DC1E6300055D5B9 /* QuartzCore.framework in Frameworks */,
+				20FC53991DC1E6260055D5B9 /* SystemConfiguration.framework in Frameworks */,
+				20FC53971DC1E18C0055D5B9 /* libz.tbd in Frameworks */,
+				20FC53951DC1E17A0055D5B9 /* AVFoundation.framework in Frameworks */,
+				20FC53931DC1E1720055D5B9 /* CoreTelephony.framework in Frameworks */,
+				20FC53911DC1E1600055D5B9 /* Foundation.framework in Frameworks */,
+				20FC538F1DC1E15A0055D5B9 /* UIKit.framework in Frameworks */,
+				20FC538D1DC1E14C0055D5B9 /* CoreGraphics.framework in Frameworks */,
+				20FC537A1DC1C7140055D5B9 /* iflyMSC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984B91DC1C4AB00E05C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984C41DC1C4AB00E05C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2029849A1DC1C4AA00E05C42 = {
+			isa = PBXGroup;
+			children = (
+				202984A51DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */,
+				202984BF1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests */,
+				202984CA1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests */,
+				202984A41DC1C4AA00E05C42 /* Products */,
+				20FC538B1DC1E14C0055D5B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		202984A41DC1C4AA00E05C42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				202984A31DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo.app */,
+				202984BC1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.xctest */,
+				202984C71DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		202984A51DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53751DC1C7140055D5B9 /* Lib */,
+				20BB96D01DC1EA6400BF7263 /* ZYKeyboard */,
+				202984A91DC1C4AA00E05C42 /* AppDelegate.h */,
+				202984AA1DC1C4AA00E05C42 /* AppDelegate.m */,
+				202984AC1DC1C4AA00E05C42 /* ViewController.h */,
+				202984AD1DC1C4AA00E05C42 /* ViewController.m */,
+				202984AF1DC1C4AA00E05C42 /* Main.storyboard */,
+				202984B21DC1C4AA00E05C42 /* Assets.xcassets */,
+				202984B41DC1C4AA00E05C42 /* LaunchScreen.storyboard */,
+				202984B71DC1C4AA00E05C42 /* Info.plist */,
+				20BB96D11DC1EFF000BF7263 /* Images.xcassets */,
+				202984A61DC1C4AA00E05C42 /* Supporting Files */,
+			);
+			path = ZYVoiceToWordTextViewDemo;
+			sourceTree = "<group>";
+		};
+		202984A61DC1C4AA00E05C42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				202984A71DC1C4AA00E05C42 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		202984BF1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				202984C01DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.m */,
+				202984C21DC1C4AB00E05C42 /* Info.plist */,
+			);
+			path = ZYVoiceToWordTextViewDemoTests;
+			sourceTree = "<group>";
+		};
+		202984CA1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				202984CB1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.m */,
+				202984CD1DC1C4AB00E05C42 /* Info.plist */,
+			);
+			path = ZYVoiceToWordTextViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		20BB96D01DC1EA6400BF7263 /* ZYKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53851DC1CD470055D5B9 /* ZYToolBarView.h */,
+				20FC53861DC1CD470055D5B9 /* ZYToolBarView.m */,
+				20FC53881DC1D8750055D5B9 /* ZYVoiceRecognizerView.h */,
+				20FC53891DC1D8750055D5B9 /* ZYVoiceRecognizerView.m */,
+			);
+			path = ZYKeyboard;
+			sourceTree = "<group>";
+		};
+		20FC53751DC1C7140055D5B9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				20FC537F1DC1C7820055D5B9 /* ZYTextView.h */,
+				20FC53801DC1C7820055D5B9 /* ZYTextView.m */,
+				20FC53821DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.h */,
+				20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */,
+				20FC53761DC1C7140055D5B9 /* XunFeiYuYin */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		20FC53761DC1C7140055D5B9 /* XunFeiYuYin */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53771DC1C7140055D5B9 /* iflyMSC.framework */,
+				20FC53781DC1C7140055D5B9 /* ISRDataHelper.h */,
+				20FC53791DC1C7140055D5B9 /* ISRDataHelper.m */,
+			);
+			path = XunFeiYuYin;
+			sourceTree = "<group>";
+		};
+		20FC538B1DC1E14C0055D5B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */,
+				20FC539E1DC1E8240055D5B9 /* AudioToolbox.framework */,
+				20FC539C1DC1E7F20055D5B9 /* CoreLocation.framework */,
+				20FC539A1DC1E6300055D5B9 /* QuartzCore.framework */,
+				20FC53981DC1E6260055D5B9 /* SystemConfiguration.framework */,
+				20FC53961DC1E18C0055D5B9 /* libz.tbd */,
+				20FC53941DC1E17A0055D5B9 /* AVFoundation.framework */,
+				20FC53921DC1E1720055D5B9 /* CoreTelephony.framework */,
+				20FC53901DC1E1600055D5B9 /* Foundation.framework */,
+				20FC538E1DC1E15A0055D5B9 /* UIKit.framework */,
+				20FC538C1DC1E14C0055D5B9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		202984A21DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202984D01DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemo" */;
+			buildPhases = (
+				2029849F1DC1C4AA00E05C42 /* Sources */,
+				202984A01DC1C4AA00E05C42 /* Frameworks */,
+				202984A11DC1C4AA00E05C42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYVoiceToWordTextViewDemo;
+			productName = ZYVoiceToWordTextViewDemo;
+			productReference = 202984A31DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		202984BB1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202984D31DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemoTests" */;
+			buildPhases = (
+				202984B81DC1C4AB00E05C42 /* Sources */,
+				202984B91DC1C4AB00E05C42 /* Frameworks */,
+				202984BA1DC1C4AB00E05C42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				202984BE1DC1C4AB00E05C42 /* PBXTargetDependency */,
+			);
+			name = ZYVoiceToWordTextViewDemoTests;
+			productName = ZYVoiceToWordTextViewDemoTests;
+			productReference = 202984BC1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		202984C61DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 202984D61DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemoUITests" */;
+			buildPhases = (
+				202984C31DC1C4AB00E05C42 /* Sources */,
+				202984C41DC1C4AB00E05C42 /* Frameworks */,
+				202984C51DC1C4AB00E05C42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				202984C91DC1C4AB00E05C42 /* PBXTargetDependency */,
+			);
+			name = ZYVoiceToWordTextViewDemoUITests;
+			productName = ZYVoiceToWordTextViewDemoUITests;
+			productReference = 202984C71DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2029849B1DC1C4AA00E05C42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ZY;
+				TargetAttributes = {
+					202984A21DC1C4AA00E05C42 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					202984BB1DC1C4AB00E05C42 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 202984A21DC1C4AA00E05C42;
+					};
+					202984C61DC1C4AB00E05C42 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 202984A21DC1C4AA00E05C42;
+					};
+				};
+			};
+			buildConfigurationList = 2029849E1DC1C4AA00E05C42 /* Build configuration list for PBXProject "ZYVoiceToWordTextViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2029849A1DC1C4AA00E05C42;
+			productRefGroup = 202984A41DC1C4AA00E05C42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				202984A21DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */,
+				202984BB1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests */,
+				202984C61DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		202984A11DC1C4AA00E05C42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202984B61DC1C4AA00E05C42 /* LaunchScreen.storyboard in Resources */,
+				20BB96D21DC1EFF000BF7263 /* Images.xcassets in Resources */,
+				202984B31DC1C4AA00E05C42 /* Assets.xcassets in Resources */,
+				202984B11DC1C4AA00E05C42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984BA1DC1C4AB00E05C42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984C51DC1C4AB00E05C42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2029849F1DC1C4AA00E05C42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FC53841DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m in Sources */,
+				20FC53811DC1C7820055D5B9 /* ZYTextView.m in Sources */,
+				20FC53871DC1CD470055D5B9 /* ZYToolBarView.m in Sources */,
+				202984AE1DC1C4AA00E05C42 /* ViewController.m in Sources */,
+				202984AB1DC1C4AA00E05C42 /* AppDelegate.m in Sources */,
+				20FC537B1DC1C7140055D5B9 /* ISRDataHelper.m in Sources */,
+				20FC538A1DC1D8750055D5B9 /* ZYVoiceRecognizerView.m in Sources */,
+				202984A81DC1C4AA00E05C42 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984B81DC1C4AB00E05C42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202984C11DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		202984C31DC1C4AB00E05C42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202984CC1DC1C4AB00E05C42 /* ZYVoiceToWordTextViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		202984BE1DC1C4AB00E05C42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 202984A21DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */;
+			targetProxy = 202984BD1DC1C4AB00E05C42 /* PBXContainerItemProxy */;
+		};
+		202984C91DC1C4AB00E05C42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 202984A21DC1C4AA00E05C42 /* ZYVoiceToWordTextViewDemo */;
+			targetProxy = 202984C81DC1C4AB00E05C42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		202984AF1DC1C4AA00E05C42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				202984B01DC1C4AA00E05C42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		202984B41DC1C4AA00E05C42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				202984B51DC1C4AA00E05C42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		202984CE1DC1C4AB00E05C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haichuan Zhao (FSYZY7B99T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haichuan Zhao (FSYZY7B99T)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "713afc06-69a9-48e6-98a3-ae66655a019b";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		202984CF1DC1C4AB00E05C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "713afc06-69a9-48e6-98a3-ae66655a019b";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		202984D11DC1C4AB00E05C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haichuan Zhao (FSYZY7B99T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Haichuan Zhao (FSYZY7B99T)";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYVoiceToWordTextViewDemo/Lib/XunFeiYuYin",
+				);
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "61097135-d6af-4c4f-8aae-c20c19cf359c";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		202984D21DC1C4AB00E05C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYVoiceToWordTextViewDemo/Lib/XunFeiYuYin",
+				);
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		202984D41DC1C4AB00E05C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem.ZYVoiceToWordTextViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYVoiceToWordTextViewDemo.app/ZYVoiceToWordTextViewDemo";
+			};
+			name = Debug;
+		};
+		202984D51DC1C4AB00E05C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem.ZYVoiceToWordTextViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYVoiceToWordTextViewDemo.app/ZYVoiceToWordTextViewDemo";
+			};
+			name = Release;
+		};
+		202984D71DC1C4AB00E05C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem.ZYVoiceToWordTextViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYVoiceToWordTextViewDemo;
+			};
+			name = Debug;
+		};
+		202984D81DC1C4AB00E05C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYVoiceToWordTextViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem.ZYVoiceToWordTextViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYVoiceToWordTextViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2029849E1DC1C4AA00E05C42 /* Build configuration list for PBXProject "ZYVoiceToWordTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202984CE1DC1C4AB00E05C42 /* Debug */,
+				202984CF1DC1C4AB00E05C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		202984D01DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202984D11DC1C4AB00E05C42 /* Debug */,
+				202984D21DC1C4AB00E05C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		202984D31DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202984D41DC1C4AB00E05C42 /* Debug */,
+				202984D51DC1C4AB00E05C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		202984D61DC1C4AB00E05C42 /* Build configuration list for PBXNativeTarget "ZYVoiceToWordTextViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202984D71DC1C4AB00E05C42 /* Debug */,
+				202984D81DC1C4AB00E05C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2029849B1DC1C4AA00E05C42 /* Project object */;
+}
