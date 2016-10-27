@@ -18,7 +18,6 @@
 		20BB96D21DC1EFF000BF7263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BB96D11DC1EFF000BF7263 /* Images.xcassets */; };
 		20FC537A1DC1C7140055D5B9 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53771DC1C7140055D5B9 /* iflyMSC.framework */; };
 		20FC537B1DC1C7140055D5B9 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53791DC1C7140055D5B9 /* ISRDataHelper.m */; };
-		20FC53811DC1C7820055D5B9 /* ZYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53801DC1C7820055D5B9 /* ZYTextView.m */; };
 		20FC53841DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */; };
 		20FC538D1DC1E14C0055D5B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC538C1DC1E14C0055D5B9 /* CoreGraphics.framework */; };
 		20FC538F1DC1E15A0055D5B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC538E1DC1E15A0055D5B9 /* UIKit.framework */; };
@@ -33,6 +32,7 @@
 		20FC53A11DC1E84A0055D5B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */; };
 		CB97DCEA1DC1FE7B00E10FCA /* ZYToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCE71DC1FE7B00E10FCA /* ZYToolBarView.m */; };
 		CB97DCEB1DC1FE7B00E10FCA /* ZYVoiceRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCE91DC1FE7B00E10FCA /* ZYVoiceRecognizerView.m */; };
+		CB97DCEE1DC205C000E10FCA /* ZYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCED1DC205C000E10FCA /* ZYTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +73,6 @@
 		20FC53771DC1C7140055D5B9 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		20FC53781DC1C7140055D5B9 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
 		20FC53791DC1C7140055D5B9 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
-		20FC537F1DC1C7820055D5B9 /* ZYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYTextView.h; path = ../ZYTextView.h; sourceTree = "<group>"; };
-		20FC53801DC1C7820055D5B9 /* ZYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYTextView.m; path = ../ZYTextView.m; sourceTree = "<group>"; };
 		20FC53821DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DismissKeyboard.h"; sourceTree = "<group>"; };
 		20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DismissKeyboard.m"; sourceTree = "<group>"; };
 		20FC538C1DC1E14C0055D5B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +90,8 @@
 		CB97DCE71DC1FE7B00E10FCA /* ZYToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYToolBarView.m; sourceTree = "<group>"; };
 		CB97DCE81DC1FE7B00E10FCA /* ZYVoiceRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYVoiceRecognizerView.h; sourceTree = "<group>"; };
 		CB97DCE91DC1FE7B00E10FCA /* ZYVoiceRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYVoiceRecognizerView.m; sourceTree = "<group>"; };
+		CB97DCEC1DC205C000E10FCA /* ZYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextView.h; sourceTree = "<group>"; };
+		CB97DCED1DC205C000E10FCA /* ZYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 		20FC53751DC1C7140055D5B9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				20FC537F1DC1C7820055D5B9 /* ZYTextView.h */,
-				20FC53801DC1C7820055D5B9 /* ZYTextView.m */,
+				CB97DCEC1DC205C000E10FCA /* ZYTextView.h */,
+				CB97DCED1DC205C000E10FCA /* ZYTextView.m */,
 				20FC53821DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.h */,
 				20FC53831DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m */,
 				20FC53761DC1C7140055D5B9 /* XunFeiYuYin */,
@@ -383,8 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20FC53841DC1CC0D0055D5B9 /* UIViewController+DismissKeyboard.m in Sources */,
-				20FC53811DC1C7820055D5B9 /* ZYTextView.m in Sources */,
 				CB97DCEA1DC1FE7B00E10FCA /* ZYToolBarView.m in Sources */,
+				CB97DCEE1DC205C000E10FCA /* ZYTextView.m in Sources */,
 				202984AE1DC1C4AA00E05C42 /* ViewController.m in Sources */,
 				202984AB1DC1C4AA00E05C42 /* AppDelegate.m in Sources */,
 				20FC537B1DC1C7140055D5B9 /* ISRDataHelper.m in Sources */,
