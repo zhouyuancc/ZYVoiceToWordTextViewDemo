@@ -146,7 +146,16 @@
             
 //            [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
             
-            self.toolBarView.transform = CGAffineTransformMakeTranslation(0, - frame.size.height);
+            CGFloat ty = - frame.size.height;
+            if(self.navigationController)
+            {
+                ty = - frame.size.height - 64;
+            }
+            else
+            {
+                ty = - frame.size.height;
+            }
+            self.toolBarView.transform = CGAffineTransformMakeTranslation(0, ty);
             self.toolBarView.hidden = NO;
             
             //语音转文字frame

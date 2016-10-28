@@ -315,6 +315,7 @@
 				TargetAttributes = {
 					202984A21DC1C4AA00E05C42 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R4C556L2UL;
 						ProvisioningStyle = Manual;
 					};
 					202984BB1DC1C4AB00E05C42 = {
@@ -541,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R4C556L2UL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rniu.officesystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "61097135-d6af-4c4f-8aae-c20c19cf359c";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = WorkMacDevelop;
 			};
 			name = Debug;
 		};
