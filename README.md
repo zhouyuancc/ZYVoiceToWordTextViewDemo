@@ -13,6 +13,7 @@
 
 ![ZYKeybroad](ZYKeybroad.png)
 
+
 3. 在ZYVoiceRecognizerView.m中修改appid
 ```
 //  ZYVoiceRecognizerView.m
