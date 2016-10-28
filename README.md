@@ -2,7 +2,7 @@
 语音转文字|UITextView|讯飞
 
 ![voiceToWord](voiceToWord.gif)
-![voice](voice.mov)
+
 
 > 使用方法:
 
