@@ -3,13 +3,17 @@
 
 ![voiceToWord](voiceToWord.gif)
 ![voice](voice.mov)
-> 使用方法:
-* 1.下载讯飞SDK,替换iflyMSC.framework,添加相关类库(如不清楚请查看[官方文档](http://www.xfyun.cn/doccenter/iOS))
 
-* 2.将ZYKeybroad文件夹导入
+> 使用方法:
+
+1. 下载讯飞SDK,替换iflyMSC.framework,添加相关类库(如不清楚请查看[官方文档](http://www.xfyun.cn/doccenter/iOS))
+
+2. 将ZYKeybroad文件夹导入
+
+
 ![ZYKeybroad](ZYKeybroad.png)
 
-* 3.在ZYVoiceRecognizerView.m中修改appid
+3. 在ZYVoiceRecognizerView.m中修改appid
 ```
 //  ZYVoiceRecognizerView.m
 
