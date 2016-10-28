@@ -2,7 +2,7 @@
 语音转文字|UITextView|讯飞
 
 ![voiceToWord](voiceToWord.gif)
-
+![voice](voice.mov)
 > 使用方法:
 * 1.下载讯飞SDK,替换iflyMSC.framework,添加相关类库(如不清楚请查看[官方文档](http://www.xfyun.cn/doccenter/iOS))
 
