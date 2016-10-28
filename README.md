@@ -10,9 +10,7 @@
 
 2. 将ZYKeybroad文件夹导入
 
-
 ![ZYKeybroad](ZYKeybroad.png)
-
 
 3. 在ZYVoiceRecognizerView.m中修改appid
 ```
