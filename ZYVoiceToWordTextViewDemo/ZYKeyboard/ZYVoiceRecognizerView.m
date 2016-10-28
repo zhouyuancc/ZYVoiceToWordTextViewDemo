@@ -167,7 +167,7 @@
     
     NSString *resultFromJson = [ISRDataHelper stringFromJson:result];
     
-    //    ZYLog(@"听写结果(json)：%@测试",  resultFromJson);
+    NSLog(@"听写结果(json)：%@测试",  resultFromJson);
     //    resultFromJson = @"测试";
     
     if (self.voiceRecResultBlock) {
