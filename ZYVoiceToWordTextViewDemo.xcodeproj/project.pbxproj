@@ -30,6 +30,8 @@
 		20FC539D1DC1E7F20055D5B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC539C1DC1E7F20055D5B9 /* CoreLocation.framework */; };
 		20FC539F1DC1E8240055D5B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC539E1DC1E8240055D5B9 /* AudioToolbox.framework */; };
 		20FC53A11DC1E84A0055D5B9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */; };
+		CB4FB7191DC722A00018790E /* VoiceOff.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB4FB7171DC722A00018790E /* VoiceOff.wav */; };
+		CB4FB71A1DC722A00018790E /* VoiceOn.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB4FB7181DC722A00018790E /* VoiceOn.wav */; };
 		CB97DCEA1DC1FE7B00E10FCA /* ZYToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCE71DC1FE7B00E10FCA /* ZYToolBarView.m */; };
 		CB97DCEB1DC1FE7B00E10FCA /* ZYVoiceRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCE91DC1FE7B00E10FCA /* ZYVoiceRecognizerView.m */; };
 		CB97DCEE1DC205C000E10FCA /* ZYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB97DCED1DC205C000E10FCA /* ZYTextView.m */; };
@@ -86,6 +88,8 @@
 		20FC539C1DC1E7F20055D5B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		20FC539E1DC1E8240055D5B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		20FC53A01DC1E84A0055D5B9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CB4FB7171DC722A00018790E /* VoiceOff.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VoiceOff.wav; sourceTree = "<group>"; };
+		CB4FB7181DC722A00018790E /* VoiceOn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VoiceOn.wav; sourceTree = "<group>"; };
 		CB97DCE61DC1FE7B00E10FCA /* ZYToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYToolBarView.h; sourceTree = "<group>"; };
 		CB97DCE71DC1FE7B00E10FCA /* ZYToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYToolBarView.m; sourceTree = "<group>"; };
 		CB97DCE81DC1FE7B00E10FCA /* ZYVoiceRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYVoiceRecognizerView.h; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 		20BB96D01DC1EA6400BF7263 /* ZYKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				CB4FB7171DC722A00018790E /* VoiceOff.wav */,
+				CB4FB7181DC722A00018790E /* VoiceOn.wav */,
 				CB97DCE61DC1FE7B00E10FCA /* ZYToolBarView.h */,
 				CB97DCE71DC1FE7B00E10FCA /* ZYToolBarView.m */,
 				CB97DCE81DC1FE7B00E10FCA /* ZYVoiceRecognizerView.h */,
@@ -358,6 +364,8 @@
 				202984B61DC1C4AA00E05C42 /* LaunchScreen.storyboard in Resources */,
 				20BB96D21DC1EFF000BF7263 /* Images.xcassets in Resources */,
 				202984B31DC1C4AA00E05C42 /* Assets.xcassets in Resources */,
+				CB4FB7191DC722A00018790E /* VoiceOff.wav in Resources */,
+				CB4FB71A1DC722A00018790E /* VoiceOn.wav in Resources */,
 				202984B11DC1C4AA00E05C42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

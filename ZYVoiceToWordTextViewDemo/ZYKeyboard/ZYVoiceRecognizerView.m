@@ -13,6 +13,8 @@
 #import "iflyMSC/IFlyRecognizerView.h"
 #import "iflyMSC/IFlySpeechUtility.h"
 #import "ISRDataHelper.h"
+//音效
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
@@ -131,15 +133,19 @@
  ****/
 - (void)onEndOfSpeech
 {
+     [ZYVoiceRecognizerView playVoiceSoundWithWav:@"VoiceOff"];
+    
     if (self.iflyVoiceBtn.selected == YES) {
-        
+
         self.toolTipLabel.text = @"识别结束";
         
         self.iflyVoiceBtn.userInteractionEnabled = NO;
         
         //停留1s
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
             [self iflyAction];
+            
             self.iflyVoiceBtn.userInteractionEnabled = YES;
         });
     }
@@ -167,7 +173,7 @@
     
     NSString *resultFromJson = [ISRDataHelper stringFromJson:result];
     
-    NSLog(@"听写结果(json)：%@测试",  resultFromJson);
+    //    ZYLog(@"听写结果(json)：%@测试",  resultFromJson);
     //    resultFromJson = @"测试";
     
     if (self.voiceRecResultBlock) {
@@ -180,6 +186,10 @@
 - (void)onError: (IFlySpeechError *) error
 {
     NSLog(@"error.errorDesc %@",error.errorDesc);
+    if (error.errorCode == 20001) {//没有网络
+        //提示没有网络
+//        [MBProgressHUD showHudTipStr:@请检查网络!"];
+    }
 }
 
 - (void)cancel
@@ -198,6 +208,8 @@
     self.iflyVoiceBtn.selected = !self.iflyVoiceBtn.selected;
     
     if (self.iflyVoiceBtn.isSelected == YES) {//开始 语音转文字
+        
+        [ZYVoiceRecognizerView playVoiceSoundWithWav:@"VoiceOn"];
         
         //启动识别服务
         [_iFlySpeechRecognizer cancel];
@@ -276,6 +288,22 @@
         _backspaceBtn = backspaceBtn;
     }
     return _backspaceBtn;
+}
+
++ (void)playVoiceSoundWithWav:(NSString *)wavName
+{
+    //音效
+    SystemSoundID soundID;
+    
+    // 加载文件
+    NSURL *fileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:wavName ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileURL), &soundID);
+    
+    // 播放短频音效
+    AudioServicesPlaySystemSound(soundID);
+    
+//    // 增加震动效果，如果手机处于静音状态，提醒音将自动触发震动
+//    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
 }
 
 @end
